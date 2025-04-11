@@ -3,9 +3,283 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="https://elysianstg.wpenginepowered.com/wp-content/uploads/2020/09/Elysian_bdaf7A.png" alt="" />
+    <div class="overlay"></div>
+
+    <div class="left-sidebar">
+      <div class="logo">
+        <img src="https://elysianstg.wpenginepowered.com/wp-content/uploads/2020/09/Elysian_bdaf7A.png" alt="Logo" />
+      </div>
+      <p>Dashboards</p>
+      <ul id="tabs-nav">
+        <li class="active tab-overview">
+          <span><i class="fa-solid fa-chart-pie"></i></span><span>Overview</span>
+        </li>
+        <li class="tab-my-events">
+          <span><i class="fa-solid fa-calendar-check"></i></span><span>My Events</span>
+        </li>
+        <li class="tab-upcoming-events">
+          <span><i class="fa-solid fa-calendar-days"></i></span><span>Upcoming Events</span>
+        </li>
+        <li class="tab-user-profile">
+          <span><i class="fa-solid fa-address-card"></i></span><span>User Profile</span>
+        </li>
+        <li class="tab-membership">
+          <span><i class="fa-solid fa-user"></i></span><span>Membership</span>
+        </li>
+        <li class="tab-events">
+          <span><i class="fa-solid fa-calendar-day"></i></span><span>Events</span>
+        </li>
+        <li class="tab-my-interests">
+          <span><i class="fa-solid fa-heart"></i></span><span>My Interests</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/logout"
+            ><span><i class="fa-solid fa-right-from-bracket"></i></span> <span>Logout</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <div class="menu-left left-sidebar-toggle"><i class="fa-solid fa-bars"></i><span>Dashboards</span></div>
+        <div class="menu-right right-sidebar-toggle"><i class="fa-solid fa-bell"></i><span>Notifications</span></div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-overview">
+          <div class="sm-container-box">
+            <h2 class="sm-title">Overview</h2>
+
+            <div class="event-box-flax">
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-my-events">
+          <div class="sm-container-box">
+            <h2 class="sm-title">Events</h2>
+
+            <div class="event-box-flax">
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-upcoming-events">
+          <div class="sm-container-box">
+            <h2 class="sm-title">Upcoming Events</h2>
+
+            <div class="event-box-flax">
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-user-profile">
+          <h2>User Profile</h2>
+          <p>Manage your personal information and settings.</p>
+        </div>
+        <div class="tab-membership">
+          <h2>Membership</h2>
+          <p>Check your membership status and upgrade options.</p>
+        </div>
+        <div class="tab-events">
+          <div class="sm-container-box">
+            <h2 class="sm-title">All Events</h2>
+
+            <div class="event-box-flax">
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+              <div class="ev-box">
+                <p>Serene Event</p>
+                <h3>10 Jan 25</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-my-interests">
+          <h2>My Interests</h2>
+          <p>Update or manage your areas of interest for event recommendations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-sidebar">
+      <img src="https://elysianstg.wpengine.com/wp-content/uploads/2025/04/Vector.png" alt="Vector" />
+      <div class="sm-box">
+        <p class="notifications">Notifications</p>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <span class="n-icon"><i class="fa-solid fa-bell"></i></span>
+          <div class="n-content">
+            <p class="n-title">You event is near.</p>
+            <p class="n-time">59 minutes ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
